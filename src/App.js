@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react'
+import ContactModal from './components/ContactModal';
 import Navigation from "./components/Navigation";
 
 function App() {
@@ -12,6 +13,10 @@ function App() {
     <div className="App">
       <Navigation 
         handleShowModal={handleShowModal}
+      />
+      <ContactModal 
+        showModal={showModal}
+        handleCloseModal={handleCloseModal}
       />
     </div>
   );
