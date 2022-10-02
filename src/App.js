@@ -11,9 +11,7 @@ function App() {
   return (
     <div className="App">
       <Navigation 
-        showModal={showModal} 
         handleShowModal={handleShowModal}
-        handleCloseModal={handleCloseModal}  
       />
     </div>
   );
