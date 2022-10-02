@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react'
+import ContactModal from './components/ContactModal';
+import Navigation from "./components/Navigation";
 
 function App() {
+  const [showModal, setShowModal] = useState(false)
+
+  const handleCloseModal = () => setShowModal(false)
+  const handleShowModal = () => setShowModal(true)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation 
+        handleShowModal={handleShowModal}
+      />
+      <ContactModal 
+        showModal={showModal}
+        handleCloseModal={handleCloseModal}
+      />
     </div>
   );
 }
