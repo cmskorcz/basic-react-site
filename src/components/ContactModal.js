@@ -14,24 +14,26 @@ function ContactModal(props) {
             as='li'
             className='d-flex justify-content-between align-items-start'>
               <div className='ms-2 me-auto'>
-                <div className='fw-bold'>Subheading</div>
-                Information
+                <div className='fw-bold'>Phone</div>
+                999-999-9999
               </div>
           </ListGroup.Item>
           <ListGroup.Item
             as='li'
             className='d-flex justify-content-between align-items-start'>
               <div className='ms-2 me-auto'>
-                <div className='fw-bold'>Subheading</div>
-                Information
+                <div className='fw-bold'>Email</div>
+                <a href='mailto:testemail@email.com'>testemail@email.com</a>
               </div>
           </ListGroup.Item>
           <ListGroup.Item
             as='li'
             className='d-flex justify-content-between align-items-start'>
               <div className='ms-2 me-auto'>
-                <div className='fw-bold'>Subheading</div>
-                Information
+                <div className='fw-bold'>Mailing Address</div>
+                123 Main St 
+                <br></br>
+                City, State 12313
               </div>
           </ListGroup.Item>
         </ListGroup>
