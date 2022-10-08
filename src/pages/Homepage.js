@@ -4,8 +4,10 @@ import Banner from '../components/Banner';
 function Home() {
   return (
     <Container>
-      <h1>This is the homepage</h1>
-      <Banner />
+      <h1 className='my-3'>This is the homepage</h1>
+      <Banner/>
+      <h2 className='my-3'>Something</h2>
+      <p className='mb-3'>This is a description</p>
     </Container>
   )
 }
