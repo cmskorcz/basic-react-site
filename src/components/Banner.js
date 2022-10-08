@@ -9,10 +9,12 @@ function Banner () {
   }
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} variant='dark'>
+    <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <img
           className='d-block w-100'
+          style={{ height: 400 }}
+          src='/imgs/dispatch.jpg'
           alt="First slide"
         />
         <Carousel.Caption>
@@ -23,6 +25,8 @@ function Banner () {
       <Carousel.Item>
         <img
           className='d-block w-100'
+          style={{ height: 400 }}
+          src='/imgs/invoice.jpg'
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -33,6 +37,7 @@ function Banner () {
       <Carousel.Item>
         <img
           className='d-block w-100'
+          style={{ height: 400 }}
           alt="Third slide"
         />
         <Carousel.Caption>
