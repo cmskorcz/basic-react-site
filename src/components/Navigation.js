@@ -12,7 +12,7 @@ function Navigation(props) {
           <Nav className='me-auto'>
             <Nav.Link href='/'>Home</Nav.Link>
             <Nav.Link href='/about'>About</Nav.Link>
-            <Nav.Link href='/products'>Products</Nav.Link>
+            <Nav.Link href='/services'>Services</Nav.Link>
             <Nav.Link onClick={props.handleShowModal}>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>

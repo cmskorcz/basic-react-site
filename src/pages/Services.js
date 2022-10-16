@@ -1,11 +1,11 @@
 import Container from 'react-bootstrap/Container';
 
-function Products() {
+function Services() {
   return (
     <Container>
-      <h1>This is the products page</h1>
+      <h1>This is the Service page</h1>
     </Container>
   )
 }
 
-export default Products;
+export default Services;

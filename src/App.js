@@ -9,7 +9,7 @@ import ContactModal from './components/ContactModal';
 import Navigation from "./components/Navigation";
 import About from './pages/About';
 import Home from './pages/Homepage';
-import Products from './pages/Products';
+import Services from './pages/Services';
 
 function App() {
   const [showModal, setShowModal] = useState(false)
@@ -30,7 +30,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/products' element={<Products />} />
+          <Route path='/services' element={<Services />} />
         </Routes>
       </Router>
     </div>
