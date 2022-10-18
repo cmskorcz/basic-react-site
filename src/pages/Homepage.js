@@ -3,7 +3,9 @@ import Banner from '../components/Banner';
 import HomeIntro from '../components/HomeIntro';
 import ServiceList from '../components/ServiceList';
 
-function Home() {
+function Home(props) {
+  const { serviceArr } = props
+
   return (
     <Container>
       <h1 className='my-3'>This is the homepage</h1>
@@ -11,7 +13,7 @@ function Home() {
       <h2 className='my-3'>Heading 2</h2>
       <HomeIntro />
       <h2 className='my-3'>Services</h2>
-      <ServiceList />
+      <ServiceList serviceArr={serviceArr} />
     </Container>
   )
 }
