@@ -44,11 +44,12 @@ function App() {
   return (
     <div className="App">
       <Navigation 
-        handleShowModal={handleShowModal}
+        handleShowModal={ handleShowModal }
+        serviceArr={ serviceArr }
       />
       <ContactModal 
-        showModal={showModal}
-        handleCloseModal={handleCloseModal}
+        showModal={ showModal }
+        handleCloseModal={ handleCloseModal }
       />
       <Router>
         <Routes>

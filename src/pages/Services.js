@@ -12,7 +12,11 @@ function Services(props) {
       <h1>This is the Service page {serviceId}</h1>
       { serviceArr.map(service => {
         return (
-          service.id === serviceId && <h2>{service.title}</h2>
+          service.id === serviceId && 
+            <div>
+              <h2>{ service.title }</h2>
+              <p>{ service.description }</p>
+            </div>
         )
       })}
     </Container>
