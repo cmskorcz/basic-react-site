@@ -29,7 +29,7 @@ function ServiceList (props) {
               >
                 {service.basic}
                 <br></br>
-                <a href="/services">Link</a>
+                <a href={service.link}>{service.title}</a>
               </Tab>
             )
           })}
