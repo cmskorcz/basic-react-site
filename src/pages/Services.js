@@ -9,7 +9,7 @@ function Services(props) {
 
   return (
     <Container>
-      <h1>This is the Service page {serviceId}</h1>
+      <h1>This is the Service page { serviceId }</h1>
       { serviceArr.map(service => {
         return (
           service.id === serviceId && 
@@ -19,6 +19,7 @@ function Services(props) {
             </div>
         )
       })}
+      <h2>Please Select a Service to View</h2>
     </Container>
   )
 }

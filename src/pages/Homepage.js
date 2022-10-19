@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Banner from '../components/Banner';
 import HomeIntro from '../components/HomeIntro';
-import ServiceList from '../components/ServiceList';
+import ServiceTabs from '../components/ServiceTabs';
 
 function Home(props) {
   const { serviceArr } = props
@@ -13,7 +13,7 @@ function Home(props) {
       <h2 className='my-3'>Heading 2</h2>
       <HomeIntro />
       <h2 className='my-3'>Services</h2>
-      <ServiceList serviceArr={serviceArr} />
+      <ServiceTabs serviceArr={ serviceArr } />
     </Container>
   )
 }

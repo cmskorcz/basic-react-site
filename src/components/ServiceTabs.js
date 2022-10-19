@@ -4,17 +4,17 @@ import Tabs from 'react-bootstrap/Tabs';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function ServiceList (props) {
+function ServiceTabs (props) {
   const { serviceArr } = props;
   
   return (
     <Row>
-      <Col lg={8}>
+      <Col lg={7}>
         <p>
           Here are is list of our available services.
         </p>
       </Col>
-      <Col lg={4}>
+      <Col lg={5}>
         <Tabs
           defaultActiveKey='1' 
           id='services-controlled-tab' 
@@ -39,4 +39,4 @@ function ServiceList (props) {
   )
 }
 
-export default ServiceList;
+export default ServiceTabs;

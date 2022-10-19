@@ -3,8 +3,10 @@ import Modal from 'react-bootstrap/Modal';
 import ListGroup from 'react-bootstrap/ListGroup'
 
 function ContactModal(props) {
+  const { showModal, handleCloseModal } = props;
+
   return (
-    <Modal show={props.showModal} onHide={props.handleCloseModal}>
+    <Modal show={ showModal } onHide={ handleCloseModal }>
       <Modal.Header closeButton>
         <Modal.Title>Contact Us</Modal.Title>
       </Modal.Header>
@@ -39,7 +41,7 @@ function ContactModal(props) {
         </ListGroup>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant='secondary' onClick={props.handleCloseModal}>
+        <Button variant='secondary' onClick={ handleCloseModal }>
           Close
         </Button>
       </Modal.Footer>

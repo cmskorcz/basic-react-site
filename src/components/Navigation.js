@@ -15,8 +15,9 @@ function Navigation(props) {
           <Nav className='me-auto'>
             <Nav.Link href='/'>Home</Nav.Link>
             <Nav.Link href='/about'>About</Nav.Link>
-            {/* <Nav.Link href='/services'>Services</Nav.Link> */}
             <NavDropdown title='Services' id='services-dropdown'>
+              <NavDropdown.Item href='/services'>Service List</NavDropdown.Item>
+              <NavDropdown.Divider />
               { serviceArr.map(service => {
                 return (
                   <NavDropdown.Item key={ service.id } href={ service.link }>
