@@ -7,7 +7,14 @@ function ServiceList (props) {
     <ListGroup>
       { serviceArr.map(service => {
         return (
-          <ListGroup.Item action id={service.id} key={service.id} onClick={handleServiceChange}>{service.title}</ListGroup.Item>
+          <ListGroup.Item 
+            action
+            className='text-center' 
+            id={service.id} 
+            key={service.id} 
+            onClick={handleServiceChange}>
+              {service.title}
+          </ListGroup.Item>
         )
       })}
     </ListGroup>
