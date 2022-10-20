@@ -4,11 +4,13 @@ import Col from 'react-bootstrap/Col';
 import ServiceList from '../components/ServiceList';
 import { useSearchParams } from 'react-router-dom';
 import { useState } from 'react';
+// will remove Banner when different image becomes available
+import Banner from '../components/Banner';
 
 function Services(props) {
   const { serviceArr } = props;
   const [ searchParams, setSearchParams ] = useSearchParams();
-  const [ serviceId, setServiceId ] = useState(searchParams.get('id'));
+  const [ serviceId, setServiceId ] = useState(searchParams.get('id') || '1');
 
   function handleServiceChange (e) {
     setSearchParams(`id=${e.target.id}`);
@@ -16,7 +18,10 @@ function Services(props) {
   }
 
   return (
-    <Container>
+    <>
+    {/* will remove banner for a seperate stationary img when available */}
+    <Banner />
+    <Container className='my-3'>
       <Row>
         <Col lg={6}>
           <h1>This is the service page</h1>
@@ -26,13 +31,13 @@ function Services(props) {
         </Col>
       </Row>
       <Row>
-        <Col lg={4}>
+        <Col lg={4} className='align-self-center'>
           <ServiceList 
             handleServiceChange={ handleServiceChange }
             serviceArr={ serviceArr }
           /> 
         </Col>
-        <Col lg={8} className='d-flex justify-content-center'>
+        <Col lg={{ span: 7, offset: 1}}>
           { serviceArr.map(service => {
             return (
               service.id === serviceId && 
@@ -45,6 +50,7 @@ function Services(props) {
         </Col>
       </Row>
     </Container>
+    </>
   )
 }
 
