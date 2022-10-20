@@ -1,4 +1,5 @@
 import Container from 'react-bootstrap/Container';
+import ServiceList from '../components/ServiceList';
 import ListGroup from 'react-bootstrap/ListGroup'
 import { useSearchParams } from 'react-router-dom';
 import { useState } from 'react';
@@ -16,13 +17,10 @@ function Services(props) {
   return (
     <Container>
       <h1>Please Select a Service to View</h1>
-      <ListGroup>
-        { serviceArr.map(service => {
-          return (
-            <ListGroup.Item action id={service.id} key={service.id} onClick={handleServiceChange}>{service.title}</ListGroup.Item>
-          )
-        })}
-      </ListGroup>
+      <ServiceList 
+        handleServiceChange={ handleServiceChange }
+        serviceArr={ serviceArr }
+      /> 
       { serviceArr.map(service => {
         return (
           service.id === serviceId && 
