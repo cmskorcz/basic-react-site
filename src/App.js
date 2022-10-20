@@ -6,6 +6,7 @@ import {
   Route
 } from 'react-router-dom';
 import ContactModal from './components/ContactModal';
+import Footer from './components/Footer';
 import Navigation from "./components/Navigation";
 import About from './pages/About';
 import Home from './pages/Homepage';
@@ -58,6 +59,7 @@ function App() {
           <Route path='/services' element={<Services serviceArr={serviceArr} />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
   );
 }
