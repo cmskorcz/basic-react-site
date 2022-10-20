@@ -17,7 +17,14 @@ function Services(props) {
 
   return (
     <Container>
-      <h1>Please Select a Service to View</h1>
+      <Row>
+        <Col lg={6}>
+          <h1>This is the service page</h1>
+          <p>
+            Our business offers an array of services. Please select one of the services below to view a full description!
+          </p>
+        </Col>
+      </Row>
       <Row>
         <Col lg={4}>
           <ServiceList 
