@@ -1,13 +1,22 @@
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
+import React from 'react';
+import {
+  MDBFooter,
+  MDBContainer,
+  MDBCol,
+  MDBRow,
+} from 'mdb-react-ui-kit';
 
 function Footer () {
   return (
-    <Navbar bg='light'>
-      <Container>
-        <p>This is a footer</p>
-      </Container>
-    </Navbar>
+    <MDBFooter bgColor='light' className='text-center text-lg-start'>
+      <MDBContainer className='p-4'>
+        <MDBRow>
+          <MDBCol lg={6} md={12} className='mb-4 mb-md-0'>
+            <h5 className='text-uppercase'>Footer Content</h5>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
+    </MDBFooter>
   )
 }
 
