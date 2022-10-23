@@ -40,6 +40,35 @@ function Footer () {
               </li>
             </ul>
           </MDBCol>
+          
+          <MDBCol lg={3} md={6} className='mb-4 mb-md-0'>
+            <h5 className='text-uppercase'>Contact</h5>
+
+            <ul className='list-unstyled'>
+              <li>
+                <div>
+                  <div className='fw-bold'>Phone</div>
+                  999-999-9999
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div className='fw-bold'>Email</div>
+                  <a 
+                    href='mailto:testemail@email.com'
+                    className='text-decoration-none text-black'>
+                      testemail@email
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div className='fw-bold'>Address</div>
+                  123 Main St <br></br> Detroit MI 48226
+                </div>
+              </li>
+            </ul>
+          </MDBCol>
         </MDBRow>
       </MDBContainer>
     </MDBFooter>
