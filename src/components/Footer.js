@@ -71,6 +71,10 @@ function Footer () {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
+      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0,0,0,0.2)' }}>
+        &copy; { new Date().getFullYear() } Copyright: Name of Company <br></br>
+        Site Created by: <a href='https://www.github.com/cmskorcz' className='text-decoration-none text-black'>cmskorcz</a>
+      </div>
     </MDBFooter>
   )
 }
