@@ -8,7 +8,7 @@ function About() {
     <>
       <Banner />
       <Container className='my-3'>
-        <h1>This is the About page</h1>
+        <h1 className='mb-3'>This is the About page</h1>
         <Row>
           <Col lg={4}>
             <img className='w-100 h-50 mb-3' />
