@@ -8,11 +8,9 @@ function Home(props) {
 
   return (
     <>
-      <Container>
-        <h1 className='my-3'>This is the homepage</h1>
-      </Container>
       <Banner />
       <Container>
+        <h1 className='my-3'>This is the homepage</h1>
         <h2 className='my-3'>Heading 2</h2>
         <HomeIntro />
         <h2 className='my-3'>Services</h2>
